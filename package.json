@@ -1,15 +1,21 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "My Portfolio site",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.24.6",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "source-map": "^0.7.3"
   },
-  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp serve"
+  },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "hack": "^0.8.1"
-  }
+  "license": "ISC"
 }
