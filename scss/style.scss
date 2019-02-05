@@ -11,16 +11,20 @@ a {
 }
 
 .nav__container {
-    max-width: 1124px;
-    margin: 0 auto;
-    padding: 0 10px;
+    width: 100%;
+    padding: 0 20px;
     display: flex;
+    z-index: 5;
+    position: fixed;
+    @media (min-width: 900px) {
+        padding: 0 100px;
+    }
 }
 
 .nav__mobile {
     font-size: 1.8rem;
     padding: 10px;
-    @media (min-width: 600px) {
+    @media (min-width: 900px) {
         display: none;
     }
 }
@@ -29,7 +33,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 600px) {
+    @media (max-width: 901px) {
         display: none;
         
     }
@@ -50,8 +54,13 @@ a {
     list-style: none;
     display: flex;
     font-size: 1.6rem;
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         flex-direction: column;
+        width: 200px;
+        height: 370px;
+        border: 1px solid black;
+        z-index: 5;
+        background-color: #b3e5fc;
     }
 }
 
@@ -66,7 +75,7 @@ a {
 .container {
     max-width: 1124px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 30px 10px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,6 +85,8 @@ a {
     margin-top: 20%;
     @media (max-width: 600px) {
         padding: 20px;
+        height: 75vh;
+        margin-top: 30%;
     }
 }
 
