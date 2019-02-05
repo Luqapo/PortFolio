@@ -13,6 +13,7 @@ a {
 .nav__container {
     width: 100%;
     padding: 0 20px;
+    background-color: aliceblue;
     display: flex;
     z-index: 5;
     position: sticky;
@@ -83,10 +84,6 @@ a {
 }
 
 .image_slider {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // z-index: 1;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -127,8 +124,9 @@ a {
     }
 }
 
-.section__about {
-    height: 100vh;
+.section__about,
+.section__skills  {
+    min-height: 100vh;
 }
 
 .container {
@@ -209,4 +207,58 @@ a {
 
 .about__offer__images__item {
     width: 180px;
+}
+
+.section__skills {
+    background-color: #e0e0e0;
+}
+
+.skills__container {
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section__skills__header {
+    width: 100%;
+    display: block;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 2rem;
+    color: #76ff03;
+}
+
+.section__skills__item {
+    width: 40%;
+    padding-top: 10%;
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+    h3 {
+        display: block;
+        width: 100%;
+        font-size: 1.8rem;
+        text-align: center;
+        padding: 20px;
+        color: #00796b;
+    }
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        li {
+            font-size: 1.6rem;
+            display: block;
+            width: 100%;
+            padding: 10px 50px;
+        }
+    }
+}
+
+.skill_ico {
+    color: #00C851;
 }

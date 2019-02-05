@@ -12,8 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     menuListItems.forEach(item => {
         item.addEventListener('click', () => {
-            menu.style.display = 'none';
-            hamburgerMenu.style.display = 'block';
+            console.log(item.firstElementChild.innerHTML);  
+            if(window.innerWidth < 900) {
+                menu.style.display = 'none';
+                hamburgerMenu.style.display = 'block';
+                
+            }
         })
     })
 })
