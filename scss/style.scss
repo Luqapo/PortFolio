@@ -213,7 +213,8 @@ a {
     background-color: #e0e0e0;
 }
 
-.skills__container {
+.skills__container,
+.cv__container {
     max-width: 1124px;
     margin: 0 auto;
     padding: 30px 10px;
@@ -261,4 +262,31 @@ a {
 
 .skill_ico {
     color: #00C851;
+}
+
+.cv__container {
+    h2 {
+        width: 100%;
+        text-align: center;
+    }
+    div {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+        border: 2px solid #bdbdbd;
+        border-radius: 10px;
+    }
+    h3 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+    }
+    p {
+        width: 100%;
+        padding: 30px;
+    }
 }
