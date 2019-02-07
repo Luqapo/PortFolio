@@ -213,8 +213,7 @@ a {
     background-color: #e0e0e0;
 }
 
-.skills__container,
-.cv__container {
+.skills__container {
     max-width: 1124px;
     margin: 0 auto;
     padding: 30px 10px;
@@ -265,9 +264,12 @@ a {
 }
 
 .cv__container {
+    max-width: 1124px;
+    margin: 0 auto;
+    padding: 30px 10px;
     min-height: 100vh;
     h2 {
-        padding-top: 80px;
+        padding: 150px 0;
         width: 100%;
         text-align: center;
     }
