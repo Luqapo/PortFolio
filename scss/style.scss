@@ -12,14 +12,14 @@ a {
 
 .nav__container {
     width: 100%;
-    padding: 0 20px;
     background-color: aliceblue;
     display: flex;
     z-index: 5;
     position: sticky;
     top: 0;
     @media (min-width: 900px) {
-        padding: 0 100px;
+        margin: 0 auto;
+        max-width: 1124px;
     }
 }
 
@@ -36,8 +36,9 @@ a {
     display: flex;
     justify-content: space-between;
     @media (max-width: 901px) {
-        display: none;
-        
+        margin-top: 60px;
+        transition: 1s;
+        transform: translate(-150%,0);
     }
 }
 

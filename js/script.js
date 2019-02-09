@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const skillsDropdownDiv = document.querySelectorAll('.skills__dropdown__item');
 
     hamburgerMenu.addEventListener('click', () => {
-        menu.style.display = 'block';
+        menu.style.transform = 'none';
         hamburgerMenu.style.display = 'none';
     });
 
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
         item.addEventListener('click', () => {
             console.log(item.firstElementChild.innerHTML);  
             if(window.innerWidth < 900) {
-                menu.style.display = 'none';
+                menu.style.transform = 'translate(-150%,0)';
                 hamburgerMenu.style.display = 'block';
                 
             }
